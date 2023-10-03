@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>named colors</title>
+  <title>named color</title>
+  <meta name="description" content="'named color' is a digital art project on named colors by Erik Lumbela (https://www.eriklumbela.com). All included colors represent one of the named colors. Also see: https://drafts.csswg.org/css-color/#named-colors">
 </head>
 <body id="body">
   
@@ -44,30 +45,11 @@
     link.href=imageUrl;
   };
 
-  function generateCursor(color){
-    // set up a little favicon-sized canvas and fill it with the chosen color
-    const canvas = document.createElement("canvas");
-    canvas.width = canvas.height = 25;
-    const context = canvas.getContext("2d");
-    context.fillStyle = color;
-    context.fillRect(0, 0, 25, 25);
-    // get a base64 image URL from the canvas content
-    const imageUrl = canvas.toDataURL();
-
-    document.querySelectorAll('*').forEach(function(node) {
-      node.style.cursor =  imageUrl;
-    });
-
-  }
-
-
-
   function setPage(){
     const color = getRandomColor()
+    generateFavicon(color)
     changeBackground(color) 
     changeTitle(color) 
-    generateFavicon(color)
-    generateCursor(color)
   }
 
   window.addEventListener("load", () => setPage());
