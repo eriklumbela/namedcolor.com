@@ -1,0 +1,77 @@
+html, body {
+  margin: 0;
+  height: 100%;
+}
+
+.namedColor {
+  width: 100%;
+  height: 100%;
+}
+
+
+a.forward {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  font: 300 2rem system-ui;
+  color: black;
+  padding: 2rem;
+  text-decoration: none;
+}
+
+@keyframes fadeinout {
+  0% { opacity: 0; }
+  20% { opacity: 0; }
+  30% { opacity: .4; }
+  70% { opacity: .4; }
+  80% { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+
+a.back {
+  position: fixed;
+  right: 10px;
+  top: 10px;
+  font: 300 2rem system-ui;
+  color: #333;
+  background-color: white;
+  padding: 5px;
+  border-radius: 1rem;
+  text-decoration: none;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+.about {
+  margin: 2rem;
+  font: 300 2rem system-ui;
+  color: #333;
+  max-width: 1000px;
+}
+
+.about h2 {
+  margin-top: 5rem;
+  font: 200 1.5rem system-ui;
+}
+
+.about .small {
+  /*margin: 2rem 1rem;*/
+  font: 300 1rem system-ui;
+}
+
+.about ul {
+  padding-bottom: 5rem;
+}
+
+.about li {
+  margin: 1rem;
+  font-size: 1rem;
+  list-style-type: none;
+}
+
+.about a {
+  color: #333;
+}
