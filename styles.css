@@ -17,15 +17,13 @@ a.forward {
   color: black;
   padding: 2rem;
   text-decoration: none;
+  opacity: 0;
+  animation: 4s fadeinout 8s forwards;
 }
 
 @keyframes fadeinout {
-  0% { opacity: 0; }
-  20% { opacity: 0; }
-  30% { opacity: .4; }
-  70% { opacity: .4; }
-  80% { opacity: 0; }
-  100% { opacity: 0; }
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
 

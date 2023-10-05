@@ -43,4 +43,4 @@ function setPage(){
 }
 
 window.addEventListener("load", () => setPage());
-setInterval(setPage, 12000)
+setInterval(setPage, 8000)
