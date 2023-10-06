@@ -4,11 +4,12 @@
      xmlns="http://www.w3.org/2000/svg"
      aria-description="'named color' (https://www.namedcolor.com) is an art project on named colors by Erik Lumbela (https://www.eriklumbela.com). All included colors represent one of the 148 named colors. They are available for download as SVG and HTML. 'named color' NFTs can be found on OpenSea (https://opensea.io/eriklumbela). Additionally, 'named color' is available in print, book, magazine, and mural forms.">
 
+  <title>royal blue</title>
   <rect id="rect"
         width="100%" 
         height="100%" 
         fill="royalblue">
-    <title>royal blue</title>
+        <title>royal blue</title>
   </rect>
 
 </svg>
