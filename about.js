@@ -29,8 +29,8 @@ function formatColorString(color, separator){
 
 
 function createAllColorListItems(){
-  Object.entries(CSS_COLOR_NAMES).forEach(color => {
-    createColorListItem(color[0])
+  CSS_COLOR_NAMES.forEach(color => {
+    createColorListItem(color)
   });
 }
 
