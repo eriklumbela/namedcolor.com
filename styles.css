@@ -32,27 +32,18 @@ h1 {
   text-align: center;
 }
 
-.controls a {
-  color: black;
-  text-decoration: none;
-  padding: 0 1rem;
-  cursor: pointer;
-  display: inline-flex;
-
-  width: 1rem;
-  /*opacity: 0;*/
-  /*animation: 4s fadein 8s forwards;*/
+.controls, .downloads {
+  text-align: center;
 }
 
+.controls a,
 .downloads a {
   color: black;
   text-decoration: none;
-  padding: 0 1rem;
+  padding: 5px 1rem 0;
   cursor: pointer;
   display: inline-flex;
-  width: 1rem;
-  /*opacity: 0;*/
-  /*animation: 4s fadein 8s forwards;*/
+  min-width: 1rem;
 }
 
 
@@ -110,4 +101,16 @@ a.back {
 
 .about a {
   color: #333;
+}
+
+@media print {
+  .controls {
+    display: none;
+  }
+  .downloads {
+    display: none;
+  }
+  hr {
+    display: none;
+  }
 }

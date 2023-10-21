@@ -3,9 +3,10 @@ function changeTitle(color){
   document.title = color
 }
 
-function changeBackground(color){
-  let body = document.getElementById('body')
-  body.style.background = color
+function setSvgFillAsBackgroundColor(color){ // svg fill is also included in print by default
+  svgElement = document.getElementById('printableColorSVG')
+  const rectangle = svgElement.querySelector('rect');
+  rectangle.style.fill = color;
 }
 
 function randomColorList(){
@@ -46,7 +47,7 @@ function setColorName(color){
 
 function htmlColorChanges(color){
   generateFavicon(color)
-  changeBackground(color) 
+  setSvgFillAsBackgroundColor(color)
   changeTitle(color) 
   setColorName(color)
 }
@@ -116,6 +117,16 @@ function resetTimer(){
   intervalId = setInterval(forward, interval)
 }
 
+function printPage() {
+  body.style.backgroundColor = window.localStorage.getItem('currentColor')
+  window.print();
+}
+
+const print = document.getElementById('print')
+print.addEventListener('click', function() {
+  printPage()
+})
+
 const backLink = document.getElementById('back');
 backLink.addEventListener('click', function (){
   back()
@@ -154,3 +165,4 @@ const observer = new MutationObserver(() => {
 })
 
 observer.observe(body, {attributes: true})
+

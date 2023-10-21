@@ -4,19 +4,23 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>named color</title>
-  <meta name="description" content="'named color' (https://www.namedcolor.com) is an art project on named colors by Erik Lumbela (https://www.eriklumbela.com). All included colors represent one of the 148 named colors in CSS. They are available for download as SVG and HTML. 'named color' NFTs can be found on OpenSea (https://opensea.io/eriklumbela). Additionally, 'named color' is available in print, book, magazine, and mural forms.">
+  <meta name="description" content="'named color' (https://www.namedcolor.com) is an art project by Erik Lumbela (https://www.eriklumbela.com). Each of the colors featured in this project corresponds to one of the 148 named colors defined in the CSS specification (https://drafts.csswg.org/css-color/#named-colors). You can download these colors in SVG and HTML formats. 'named color' NFTs can be found on OpenSea (https://opensea.io/eriklumbela, https://opensea.io/collection/namedcolor). Additionally, 'named color' is physically available in print, book, magazine, and mural form.">
   <link rel="stylesheet" href="styles.css"/>
 
 </head>
 <body id="body">
+  <svg id="printableColorSVG" height="100%" width="100%">
+    <rect width="100%" height="100%"/>
+  </svg>
   <footer>
     <p id="color-name">color-name</p>
     <hr>
-    <p class="downloads">↓
-      <a title="download html" id="html-download" download>html</a>
-      <a title="download svg" id="svg-download" download>svg</a>
+    <p class="downloads">
+      <a title="download html" id="html-download" download>↓html</a>
+      <a title="download svg" id="svg-download" download>↓svg</a>
+      <a title="print" id="print">print | save as pdf</a>
+      <a title="NFTs" href="https://opensea.io/collection/namedcolor" target="_blank">nft</a>
     </p>
-    <hr>
     <p class="controls">
       <a title="back" id="back"><<</a>
       <a title="play/pause" id="play-pause">||</a>
