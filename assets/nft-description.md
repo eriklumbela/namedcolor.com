@@ -1,1 +1,0 @@
-[named color](https://www.namedcolor.com) is an art project on named colors by Erik Lumbela. [yellow](https://www.namedcolor.com/svgs/yellow.svg) represents one of [148 named colors in CSS](https://drafts.csswg.org/css-color/#named-colors).
